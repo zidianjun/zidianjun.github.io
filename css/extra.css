@@ -1,0 +1,84 @@
+
+html {
+  height: 100%;
+}
+body {
+  padding-top: 3.5rem;
+}
+main {
+  min-height: 100vh;
+  flex-direction: column;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+.card-img-top {
+    width: 100%;
+    height: 25vw;
+    object-fit: scale-down;
+}
+.img-thumbnail {
+  background: transparent;
+  border: none;
+  width: 80%;
+  object-fit: contain;
+}
+
+.navbar-nav .nav-link {
+  color: #f8f9fa; 
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+  background-color: transparent;
+}
+.navbar-nav .nav-link:hover {
+	color: #f8f9fa;	
+	border: 1px solid #f8f9fa;
+	border-radius: 0.5rem;
+	background-color: transparent;
+}
+.navbar-nav a:active {
+	color: black !important;
+	border: 1px solid #f8f9fa;
+	border-radius: 0.5rem;
+	background-color: white;
+}
+.navbar-nav .nav-link:active {
+  color: black; 
+  border: 1px solid #f8f9fa;
+  border-radius: 0.5rem;
+  background-color: white;
+}
+.navbar-nav li.active {
+	color: #f8f9fa;	
+	border: 1px solid #f8f9fa;
+	border-radius: 0.5rem;
+	background-color: transparent;
+}
+.section {
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+.section:nth-child(even){
+  background-color: #f8f9fa !important;
+  color: #343a40 !important;
+}
+.section:nth-child(odd){
+  background-color: #343a40 !important;
+  color:  #f8f9fa !important;
+}
+.section:nth-child(even) hr{
+	border-top-color: #343a40;
+	width: 90%;
+}
+.section:nth-child(odd) hr{
+	border-top-color: #f8f9fa;
+	width: 90%;
+}
+@media only screen and (min-width:768px) {
+	.section-header {
+		margin: 0 2em;
+		padding: 0 0 1em;
+	}
+}
